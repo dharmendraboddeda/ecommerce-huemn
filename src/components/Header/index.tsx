@@ -11,7 +11,9 @@ export const Header = ({ className }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const cartCount = 0;
   return (
-    <div className={`fixed top-0 left-0 right-0   {${className}}`}>
+    <div
+      className={`fixed z-10 top-0 left-0 right-0 bg-[#E5E3DC]  {${className}}`}
+    >
       <div className=" h-20 pl-12 pr-12 flex  items-center justify-between   ">
         <h1 className="font-bold text-xl cursor-pointer text-[#303636]">
           Your Site Title
