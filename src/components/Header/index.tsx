@@ -29,7 +29,7 @@ export const Header = ({ className }: HeaderProps) => {
           <Link href="/cart">Cart{cartCount > 0 && `(${cartCount})`}</Link>
         </div>
         <div className="lg:hidden flex items-center justify-center space-x-4 font-bold ">
-          <a href="/cart">{`(${cartCount})`}</a>
+          <Link href="/cart">{`(${cartCount})`}</Link>
           {isMenuOpen ? (
             <RxCross1
               size={30}
