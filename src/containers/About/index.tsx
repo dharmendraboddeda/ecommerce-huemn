@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import AboutImage from "@/assets/about.jpg";
-import { Button } from "@material-tailwind/react";
 
 interface AboutProps {
   className?: string;
