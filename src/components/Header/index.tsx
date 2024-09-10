@@ -15,17 +15,17 @@ export const Header = ({ className }: HeaderProps) => {
       className={`fixed z-10 top-0 left-0 right-0 bg-[#E5E3DC]  {${className}}`}
     >
       <div className=" h-20 pl-16 pr-16 flex  items-center justify-between   ">
-        <h1 className="font-bold text-xl cursor-pointer text-[#303636]">
+        <a href="/" className="font-bold text-xl cursor-pointer text-[#303636]">
           Your Site Title
-        </h1>
+        </a>
         <div className="cursor-pointer hidden lg:flex text-lg items-center pl-1 font-normal space-x-4 ">
-          <text>Shop</text>
-          <text>About</text>
-          <text>Contact</text>
-          <text>Cart</text>
+          <a href="/shop">Shop</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/cart">Cart{cartCount > 0 && `(${cartCount})`}</a>
         </div>
         <div className="lg:hidden flex items-center justify-center space-x-4 font-bold ">
-          <text>{`(${cartCount})`}</text>
+          <a href="/cart">{`(${cartCount})`}</a>
           {isMenuOpen ? (
             <RxCross1
               size={30}
